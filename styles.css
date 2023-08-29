@@ -1,59 +1,140 @@
 /* Reset some default styling */
-body, h1, h2, h3, p, table {
-    margin: 0;
-    padding: 0;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
+/* Cool and Fresh Theme Colors */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+    background-color: #EDF5E1; /* Light greenish background */
+    color: #333;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
     background-color: #fff;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: #333;
-    font-size: 32px;
+h1, h2, h3 {
+    color: #05386B; /* Deep blue */
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+    line-height: 1.2; /* Adjust line height for better readability */
+    margin-bottom: 10px; /* Add some spacing below the headings */
+    text-align: center;
+}
+
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border-color: #05386B;
+    margin: 0 auto;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
+td {
     padding: 10px;
     text-align: left;
+    border-bottom: 1px solid #05386B;
+    vertical-align: center;
+    border-bottom: #05386B;
+}
+
+th {
+    background-color: #5CDB95; /* Mint green */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
     border-bottom: 1px solid #ddd;
 }
 
-th {
-    background-color: #f2f2f2;
+/* Styling for Audio Sources */
+audio {
+    /* margin-top: 20px; */
+    display: block;
+    width: 100%; /* Adjust the width to fit the container */
+    max-width: 100%; /* Ensure the audio element doesn't exceed its container */
 }
 
-/* Pastel Corporate Theme Colors */
-h1 {
-    color: #FF6B6B;
+/* Styling for Images */
+img {
+    margin-top: 20px;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-table {
-    background-color: #F4F1DE;
+/* Styling for Anchor Links */
+.link-boxes {
+    display: flex; /* Use flexbox to create a row layout */
+    justify-content: space-between; /* Distribute items evenly along the row */
+    margin-top: 20px;
+    width: 40%;
 }
 
-th {
-    background-color: #2A9D8F;
-    color: #fff;
+a {
+    display: inline-block; /* Make the anchor links behave like blocks */
+    background-color: #5CDB95; /* Mint green */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s; /* Smooth transition for background color change */
 }
 
-tr:hover {
-    background-color: #E9C46A;
+a:hover {
+    background-color: #05386B; /* Deep blue on hover */
 }
+
+/* Styling for <p> Elements */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Adjust the widths of individual columns in the handcrafted table */
+#handcrafted th:nth-child(1),
+#handcrafted td:nth-child(1) {
+    width: 30%;
+}
+#handcrafted th:nth-child(2),
+#handcrafted td:nth-child(2) {
+    width: 30%;
+}
+#handcrafted th:nth-child(3),
+#handcrafted td:nth-child(3) {
+    width: 40%;
+}
+
+/* Adjust the widths of individual columns in the audioldm table */
+#audioldm th:nth-child(1),
+#audioldm td:nth-child(1) {
+    width: 20%;
+}
+#audioldm th:nth-child(2),
+#audioldm td:nth-child(2) {
+    width: 40%;
+}
+#audioldm th:nth-child(3),
+#audioldm td:nth-child(3) {
+    width: 40%;
+}
+
+/* Styling for the separator line */
+.separator {
+    text-align: center; /* Center-align the line */
+}
+
+.separator hr {
+    border: none; /* Remove default hr border */
+    border-top: 2.5px solid #5CDB95; /* Mint green top border */
+    margin: 30px auto; /* Space above and below the line */
+    width: 90%; /* Set the line width */
+}
+
