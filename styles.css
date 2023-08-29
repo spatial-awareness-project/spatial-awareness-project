@@ -1,9 +1,3 @@
-/* Reset some default styling */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 /* Cool and Fresh Theme Colors */
 body {
     font-family: 'Arial', sans-serif;
@@ -53,7 +47,7 @@ th {
     border-bottom: 1px solid #ddd;
 }
 
-/* Styling for Audio Sources */
+/* Styling for Audio Controls */
 audio {
     /* margin-top: 20px; */
     display: block;
@@ -61,12 +55,35 @@ audio {
     max-width: 100%; /* Ensure the audio element doesn't exceed its container */
 }
 
+/* Change the color of audio controls */
+audio::-webkit-media-controls-panel {
+    background-color: #5CDB95; /* Mint green background */
+    color: #fff; /* White text color */
+}
+
+audio::-webkit-media-controls-play-button {
+    color: #fff; /* White play button color */
+}
+
+audio::-webkit-media-controls-volume-slider::-webkit-slider-thumb {
+    background-color: #5CDB95; /* Mint green slider thumb color */
+}
+
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button {
+    color: #fff; /* White seek buttons color */
+}
+
+
 /* Styling for Images */
 img {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: block;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 50%;
+    /* width: 100%; */
+    /* height: auto; */
 }
 
 /* Styling for Anchor Links */
@@ -123,6 +140,20 @@ p {
 }
 #audioldm th:nth-child(3),
 #audioldm td:nth-child(3) {
+    width: 40%;
+}
+
+/* Adjust the widths of individual columns in the im2wav table */
+#im2wav th:nth-child(1),
+#im2wav td:nth-child(1) {
+    width: 20%;
+}
+#im2wav th:nth-child(2),
+#im2wav td:nth-child(2) {
+    width: 40%;
+}
+#im2wav th:nth-child(3),
+#im2wav td:nth-child(3) {
     width: 40%;
 }
 
