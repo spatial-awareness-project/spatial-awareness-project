@@ -40,7 +40,7 @@ td {
 }
 
 th {
-    background-color: #5CDB95; /* Mint green */
+    background-color: #7FB4D6; /* Mint green */
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -57,7 +57,7 @@ audio {
 
 /* Change the color of audio controls */
 audio::-webkit-media-controls-panel {
-    background-color: #5CDB95; /* Mint green background */
+    background-color: #7FB4D6; /* Mint green background */
     color: #fff; /* White text color */
 }
 
@@ -66,7 +66,7 @@ audio::-webkit-media-controls-play-button {
 }
 
 audio::-webkit-media-controls-volume-slider::-webkit-slider-thumb {
-    background-color: #5CDB95; /* Mint green slider thumb color */
+    background-color: #7FB4D6; /* Mint green slider thumb color */
 }
 
 audio::-webkit-media-controls-seek-back-button,
@@ -96,7 +96,7 @@ img {
 
 a {
     display: inline-block; /* Make the anchor links behave like blocks */
-    background-color: #5CDB95; /* Mint green */
+    background-color: #7FB4D6; /* Mint green */
     color: #fff; /* White text color */
     text-decoration: none;
     padding: 10px;
@@ -164,8 +164,17 @@ p {
 
 .separator hr {
     border: none; /* Remove default hr border */
-    border-top: 2.5px solid #5CDB95; /* Mint green top border */
+    border-top: 2.5px solid #7FB4D6; /* Mint green top border */
     margin: 30px auto; /* Space above and below the line */
     width: 90%; /* Set the line width */
 }
 
+/* Styling for a Single Link (Remove or Modify Box Styling) */
+#paper-link {
+    /* Remove or override the box styling */
+    background-color: transparent;
+    border: none;
+    color: #05386B; /* Set the desired text color */
+    text-decoration: underline; /* Add an underline to the link */
+    padding: 0px;
+}
