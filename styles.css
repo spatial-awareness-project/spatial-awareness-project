@@ -154,11 +154,15 @@ p {
 }
 #im2wav th:nth-child(2),
 #im2wav td:nth-child(2) {
-    width: 40%;
+    width: 30%;
 }
 #im2wav th:nth-child(3),
 #im2wav td:nth-child(3) {
-    width: 40%;
+    width: 30%;
+}
+#im2wav th:nth-child(4),
+#im2wav td:nth-child(4) {
+    width: 20%;
 }
 
 /* Styling for the separator line */
