@@ -136,11 +136,15 @@ p {
 }
 #audioldm th:nth-child(2),
 #audioldm td:nth-child(2) {
-    width: 40%;
+    width: 30%;
 }
 #audioldm th:nth-child(3),
 #audioldm td:nth-child(3) {
-    width: 40%;
+    width: 30%;
+}
+#audioldm th:nth-child(4),
+#audioldm td:nth-child(4) {
+    width: 20%;
 }
 
 /* Adjust the widths of individual columns in the im2wav table */
